@@ -1,0 +1,60 @@
+• Elementos duplicados e garente ordem de inserção
+
+ArrayList e Vector -> interface de 'list'
+LinkedList e PriorityQueue -> interface de 'Queue' (porém o LinkedList tem a interface de 'list' tambem
+(todas aceitam elementos duplicados)
+
+
+Vector -> Usado mais para threads.
+
+ArrayList -> Usado onde mais operações de pesquisa são necessario.
+(muita operação de pesquisa)
+(usa por baixo dos panos um array pra guardar os elementos)
+(fazer remoção no arraylist é mais custoso, demora mais)
+(Implementa apenas o "list")
+
+
+LinkedList -> usado mais onde operações de inserção e exclusão são necessario.
+(muita operação de inserção e exclusão)
+(utiliza lista duplamente ligada pra fazer o armazenamento dos elementos)
+(faz a remoção é mais rapido porque é lista duplamente ligada)
+(Implementa tanto o 'List' quando o "Queue")
+
+
+
+LIST:
+[x] Iniciar
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html
+[x] Generics
+[x] Diamond Operator
+https://www.baeldung.com/java-diamond-operator
+[x] toString()
+[x] indexOf()
+[x] add()
+[x] set()
+[x] contains()
+[x] toString()
+[x] get()
+[x] Collections.min()
+[x] Collections.max()
+[x] iterator()
+[x] iterator().hasNext()
+[x] iterator().next()
+[x] size()
+[x] remove()
+[x] iterator().remove()
+[x] clear()
+[x] isEmpty()
+
+
+LinkedList:
+[x] class Gato - nome, idade, cor
+[x] new ArrayList()
+[x] Collections.shuffle()
+[x] Collections.sort()
+[x] sort()
+[x] Comparable
+https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/
+[x] new ComparatorIdade()
+[x] new ComparatorCor()
+[x] new ComparatorNomeGeneroTempoEpisodio()
