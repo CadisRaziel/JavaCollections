@@ -1,0 +1,17 @@
+HashSet:
+Utiliza hasMap para armazena os elementos
+não mantem a ordem dos elementos(fica aleatorio)
+tem uma performance melhor do que a LinkedHasSet e da TreeSet
+Permite no maximo 1 elemento null
+
+LinkedHasSet:
+Utiliza LinkedHasSet para armazena os elementos
+mantem a ordem dos elementos(igual lista)
+Tem uma performance mediana em relação a HashSet e TreeSet
+Permite no maximo 1 elemento null
+
+TreeSet:
+Utiliza TreeSet para armazena os elementos
+mantem por default a ordem natural dos elementos (numeros ordem numerica, letras ordem alfabetica)
+Performance lenta
+Nao permite nenhum elemento null

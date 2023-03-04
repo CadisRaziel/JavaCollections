@@ -67,13 +67,14 @@ public class ListExemple {
         System.out.println("\n");
 
 
+
         System.out.println("Exiba todas as notas na ordem em que foram informados: ");
         System.out.println(notas);
         //ou
         for (Double nota: notas) {
             System.out.println(notas);
-            System.out.println("\n");
         }
+        System.out.println("\n");
 
         System.out.println("Exiba a terceira nota adicionada: ");
         System.out.println(notas.get(2));
@@ -90,7 +91,7 @@ public class ListExemple {
         System.out.println(Collections.max(notas));
         System.out.println("\n");
 
-        System.out.println("Exiba a soma dos valores");
+        System.out.println("Exiba a soma dos valores, (somando todas as notas)");
         Iterator<Double> iterator = notas.iterator();
         //hasNext -> se tiver elemento proximo (quando nao tiver proximo ele da false e encerra o while)
         //next -> proximo
@@ -104,7 +105,7 @@ public class ListExemple {
             soma += next;
             //priemrio 7.0 + soma(que é 0)
             //segundo 7.0 + 8.5
-            //terceiro 7.0 + 8.5 + 9.3
+            //terceiro 15.5 + 9.3
             //e assim ate pegar todos os elementos do array
         }
         System.out.println(soma);

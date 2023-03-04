@@ -1,0 +1,24 @@
+HashMap:
+O(1) -> Get, Put, ContainsKey and remove
+Ordem de inserção aleatoria
+permite chave nulla
+interface -> map
+nao tem sincronização (porém podemos usar 'Collections.synchronizedMap() para deixar sincronizavel'
+estrutura de dados -> List of bucket
+
+
+LinkedHashMap:
+O(1) -> Get, Put, ContainsKey and remove
+De acordo com ordem de inserção
+permite chave nulla
+interface -> map
+nao tem sincronização (porém podemos usar 'Collections.synchronizedMap() para deixar sincronizavel'
+estrutura de dados -> Doubly linked list of buckets
+
+TreeMap:
+O(log n) -> Get, Put, ContainsKey and remove
+de acordo com a ordem natural (alfabetica, numerica)
+não permite chave nulla
+interface -> map / sortedMap / NavigableMap
+nao tem sincronização (porém podemos usar 'Collections.synchronizedMap() para deixar sincronizavel'
+estrutura de dados -> red-black tree

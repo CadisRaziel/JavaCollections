@@ -58,3 +58,22 @@ https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/
 [x] new ComparatorIdade()
 [x] new ComparatorCor()
 [x] new ComparatorNomeGeneroTempoEpisodio()
+
+
+
+
+<<Interface>>
+    List
+(ArrayList - LinkedList)
+
+
+<<Interface>>
+    Map
+(HashMap - LinkedHashMap)
+
+
+
+Vector - HashTable -> thread safe
+
+
+TreeSet e TreeMap -> para fazer arvores binarias
