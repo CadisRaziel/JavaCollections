@@ -1,0 +1,5 @@
+1. Classe anonima
+2. Functional Interface
+3. Lambda: ((Gato gato) -> gato.getNome());     (Veja como eu nao preciso criar uma classe comparator, eu chamo direto)
+4. Reference Method: Gato::getNome;             (Veja como eu nao preciso criar uma classe comparator, eu chamo direto)
+5. Stream API
