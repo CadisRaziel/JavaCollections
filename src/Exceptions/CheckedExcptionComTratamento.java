@@ -1,13 +1,31 @@
 package Exceptions;
 
+import javax.swing.*;
 import java.io.*;
 
 public class CheckedExcptionComTratamento {
-    //Eu posso passar o 'throws IOException' aqui no main, para resolver o erro do 'imprimirArquivoNoConsole'
-    //porém se o arquivo for nulo, ou ter erros, ele vai da um erro em tempo de exceução
+
     public static void main(String[] args) {
         String nomeDoArquivo = "romances-blake-crouch.txt";
-        imprimirArquivoNoConsole(nomeDoArquivo);
+
+        //lembrando a gente escolheu tratar o erro direto aqui na chamada do metodo, porém o certo seria tratar la na criação do metodo
+        //o exemplo aqui foi pra gente ve que podemos lançar o erro na criaçao do metodo, e na chamada dele a gente pode tratar
+
+        //repare que o main esta chamando esse metodo, mais se nao fosse o main e fosse outro metodo, eu podia lança o erro e pro outro metodo que chamr ele pode tratar o erro, e assim podemos ficar nessa cascata, porém não é o correto
+
+        //tratando com try catch (tanto o metodo aqui em cima, quanto o metodo la em baixo)
+        //lembrando que existe hierarquia de erros, o 'IOException' esta segundo, pois ela é a classe mae dos erros, se eu coloco ela antes o compilador vai fala pra min tirar o catch 'FileNotFoundException'
+        //coloque o mouse em cima do erro e sempre veja se tem 'more actions', a propria ide da dicas
+        try {
+            imprimirArquivoNoConsole(nomeDoArquivo);
+        } catch (FileNotFoundException e){
+            //e.printStackTrace();
+            JOptionPane.showMessageDialog(null,"Revise o nome do arquivo enviado" + e.getCause());
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null,"Ocorreu um erro inesperado entre em contato com o suporte, erro: " + e.getCause());
+            e.printStackTrace();
+        }
+
 
         System.out.println("Apesar da exception ou não, o programa continua");
 

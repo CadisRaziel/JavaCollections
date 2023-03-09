@@ -1,6 +1,6 @@
 //Criando classe para tratamento de exceção personalizado
 
-package Exceptions;
+package Exceptions.ClasseExceptionCustomizada;
 
 import java.io.*;
 

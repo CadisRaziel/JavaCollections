@@ -4,6 +4,8 @@ import java.io.*;
 
 public class CheckedExcptionSemTratamento {
     public static void main(String[] args) {
+        /*
+
         String nomeDoArquivo = "romances-blake-crouch.txt";
         imprimirArquivoNoConsole(nomeDoArquivo);
 
@@ -42,5 +44,9 @@ public class CheckedExcptionSemTratamento {
         //flush -> descarregar
         bw.flush();
         br.close();
+    }
+
+     */
+
     }
 }
